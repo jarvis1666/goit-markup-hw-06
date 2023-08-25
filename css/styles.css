@@ -345,37 +345,6 @@ img {
     font-weight: 400;
   }
 }
-/*
-.social-contact {
-  display: flex;
-  gap: 24px;
-  justify-content: center;
-}
-.social-contact-fone {
-  width: 40px;
-  height: 40px;
-  display: flex;
-}
-.social-contact-link {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  background-color: var(--color-blue);
-  border-radius: 50%;
-  align-items: center;
-  justify-content: center;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.social-contact-link:hover,
-.social-contact-link:focus {
-  background-color: var(--color-ocean);
-}
-
-.social-contact-icon {
-  fill: var(--color-team);
-} */
 
 /*Секція 3  Картинки*/
 .images {
@@ -418,11 +387,15 @@ img {
     row-gap: 64px;
     column-gap: 24px;
     flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
 .team-section {
+  max-width: 264px;
   margin-bottom: 72px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: var(--color-white);
 
   border-radius: 0px 0px 4px 4px;
@@ -430,8 +403,14 @@ img {
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
+@media screen and (max-vidth: 767px) {
+  .team-section:last-child {
+    margin-bottom: 0;
+  }
+}
 @media only screen and (min-width: 768px) {
   .team-section {
+    margin: 0;
     width: calc((100% - 24px) / 2);
   }
 }
@@ -444,21 +423,85 @@ img {
 .team-techskill {
   padding: 32px 0;
 }
+
 .people-name {
   text-align: center;
   margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--color-base);
 }
 .people-skill {
   text-align: center;
+  padding-bottom: 8px;
+
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-text);
 }
-/* Секція 5 Сustomers*/
-/* .container-quality-icons {
+.social-contact {
   display: flex;
   gap: 24px;
+  justify-content: center;
+  margin: 0 16px;
+}
+
+.social-contact-fone {
+  width: 40px;
+  height: 40px;
+  display: flex;
+}
+.social-contact-link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-blue);
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-contact-link:hover,
+.social-contact-link:focus {
+  background-color: var(--color-ocean);
+}
+
+.social-contact-icon {
+  fill: var(--color-team);
+}
+/* Секція 5 Сustomers*/
+.container-quality-icons {
+  display: flex;
+  row-gap: 72px;
+  column-gap: 16px;
+  /* gap: 24px; */
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media only screen and (min-width: 768px) {
+  .container-quality-icons {
+    column-gap: 24px;
+  }
 }
 .customers-fon {
-  width: calc((100% - 120px) / 6);
+  width: calc((100% - 16px) / 2);
+  width: 190px;
   height: 88px;
+}
+@media only screen and (min-width: 768px) {
+  .customers-fon {
+    width: calc((100% - 48px) / 3);
+    width: 168px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .customers-fon {
+    width: calc((100% - 120px) / 6);
+  }
 }
 .customers-link {
   width: 100%;
@@ -479,52 +522,114 @@ img {
 .customers-link:focus {
   border-color: var(--color-ocean);
   color: var(--color-ocean);
-} */
+}
 
 /*footer*/
 /* клас web використовєується з header*/
-/* .foter {
+.foter {
   background-color: var(--color-base);
-  padding: 100px 0;
+  padding: 96px 0;
 }
+@media only screen and (min-width: 768px) {
+  .foter {
+    padding-left: 108px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .foter {
+    padding-top: 102px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
 .ftr-text {
-  margin-right: 120px;
+  margin: 0 auto;
+  max-width: 268px;
 }
+@media only screen and (min-width: 768px) {
+  .ftr-text {
+    max-width: 264px;
+    margin: 0;
+  }
+}
+
 .ftr {
   display: flex;
-
   align-items: baseline;
+  flex-direction: column;
 }
-.logo-footer {
-  display: inline-block;
-  margin-bottom: 16px;
+@media only screen and (min-width: 768px) {
+  .ftr {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
+
 .studio-footer {
   color: var(--color-team);
   font-family: "Raleway", sans-serif;
+}
+
+.web-footer {
+  display: flex;
+  margin-bottom: 16px;
+  font-family: "Raleway", sans-serif;
+  color: var(--color-blue);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (min-width: 768px) {
+  .web-footer {
+    display: inline-block;
+  }
 }
 .text-footer {
   color: var(--color-team);
   line-height: 1.5;
   letter-spacing: 0.02em;
   max-width: 264px;
+  margin-bottom: 72px;
 }
+@media only screen and (min-width: 1158px) {
+  .text-footer {
+    margin-bottom: 0;
+  }
+}
+
 .social-name-ftr {
   color: var(--color-white);
   margin-bottom: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  text-align: center;
 }
-.section-porfolio {
-  padding-top: 96px;
-  padding-bottom: 120px;
-}
-.container-button {
+
+/* .container-button {
   display: flex;
   justify-content: center;
   gap: 24px;
   margin-bottom: 72px;
+} */
+.social-ftr {
+  margin: 0 auto 72px auto;
+}
+@media only screen and (min-width: 768px) {
+  .social-ftr {
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .social-ftr {
+    margin: 0 auto 0 120px;
+  }
 }
 .social-contact-fone-ftr {
   width: 40px;
@@ -549,10 +654,10 @@ img {
 .social-contact-link-ftr:hover,
 .social-contact-link-ftr:focus {
   background-color: var(--color-green);
-} */
+}
 /*Форма футера*/
-/* .foter-form {
-  margin-left: auto;
+.foter-form {
+  /* margin-left: auto; */
 }
 .foter-form-text {
   margin-bottom: 16px;
@@ -565,7 +670,12 @@ img {
 .foter-form-block {
   display: flex;
   gap: 24px;
+  flex-direction: column;
 }
+/* .foter-form-label {
+  max-width: 767px;
+  
+} */
 .foter-form-email {
   width: 264px;
   height: 40px;
@@ -613,10 +723,14 @@ img {
 .foter-form-icon-send {
   fill: var(--color-white);
   margin-left: 16px;
-} */
+}
 
 /*portfolio-main*/
-/* .button-portfolio {
+
+/*.section-porfolio {
+  padding-top: 96px;
+  padding-bottom: 120px;
+} .button-portfolio {
   background-color: var(--color-team);
   font-family: "Roboto", sans-serif;
   font-size: 16px;
