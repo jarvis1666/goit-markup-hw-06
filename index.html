@@ -53,18 +53,8 @@
           aria-expanded="false"
           aria-controls="mobile-menu"
         >
-          <svg
-            width="24"
-            height="24"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"
-            ></path>
+          <svg class="mobile-menu-icon" width="32" height="24">
+            <use href="./images/icons.svg#icon-charm_menu-hamburger"></use>
           </svg>
         </button>
       </div>
@@ -146,26 +136,41 @@
           <ul class="list container-images">
             <li class="images-list">
               <img
+                srcset="
+                  ./images/Section2/img1.jpg    1x,
+                  ./images/Section2/img1@2x.jpg 2x
+                "
                 src="./images/Section2/img1.jpg"
                 alt="pc help"
                 width="360"
                 height="300"
+                loading="lazy"
               />
             </li>
             <li class="images-list">
               <img
+                srcset="
+                  ./images/Section2/img2.jpg    1x,
+                  ./images/Section2/img2@2x.jpg 2x
+                "
                 src="./images/Section2/img2.jpg"
                 alt="chat help"
                 width="360"
                 height="300"
+                loading="lazy"
               />
             </li>
             <li class="images-list">
               <img
+                srcset="
+                  ./images/Section2/img3.jpg    1x,
+                  ./images/Section2/img3@2x.jpg 2x
+                "
                 src="./images/Section2/img3.jpg"
                 alt="video help"
                 width="360"
                 height="300"
+                loading="lazy"
               />
             </li>
           </ul>
@@ -178,10 +183,15 @@
           <ul class="list container-team">
             <li class="team-section">
               <img
+                srcset="
+                  ./images/Section3/img1.jpg    1x,
+                  ./images/Section3/img1@2x.jpg 2x
+                "
                 src="./images/Section3/img1.jpg"
                 alt="Mark Guerrero"
                 width="264"
                 height="260"
+                loading="lazy"
               />
               <div class="team-techskill">
                 <h3 class="people-name">Mark Guerrero</h3>
@@ -220,10 +230,15 @@
             </li>
             <li class="team-section">
               <img
+                srcset="
+                  ./images/Section3/img2.jpg    1x,
+                  ./images/Section3/img2@2x.jpg 2x
+                "
                 src="./images/Section3/img2.jpg"
                 alt="Tom Ford"
                 width="264"
                 height="260"
+                loading="lazy"
               />
               <div class="team-techskill">
                 <h3 class="people-name">Tom Ford</h3>
@@ -262,10 +277,15 @@
             </li>
             <li class="team-section">
               <img
+                srcset="
+                  ./images/Section3/img3.jpg    1x,
+                  ./images/Section3/img3@2x.jpg 2x
+                "
                 src="./images/Section3/img3.jpg"
                 alt="Camilf Garcia"
                 width="264"
                 height="260"
+                loading="lazy"
               />
               <div class="team-techskill">
                 <h3 class="people-name">Camila Garcia</h3>
@@ -304,10 +324,15 @@
             </li>
             <li class="team-section">
               <img
+                srcset="
+                  ./images/Section3/img4.jpg    1x,
+                  ./images/Section3/img4@2x.jpg 2x
+                "
                 src="./images/Section3/img4.jpg"
                 alt="Daniel Wilson"
                 width="264"
                 height="260"
+                loading="lazy"
               />
               <div class="team-techskill">
                 <h3 class="people-name">Daniel Wilson</h3>
@@ -446,7 +471,7 @@
         <div class="foter-form">
           <p class="foter-form-text">Subscribe</p>
           <form class="foter-form-block" name="foter" autocomplete="on">
-            <label class="foter-form-label"
+            <label
               ><input
                 class="foter-form-email"
                 type="email"
@@ -466,7 +491,7 @@
       </div>
     </footer>
     <!--модальне вікно-->
-    <!-- <div data-modal class="backdrop is-hidden">
+    <div data-modal class="backdrop is-hidden">
       <div class="modal">
         <button class="modal-but" data-modal-close type="button">
           <svg class="modal-but-icon" width="8" height="8">
@@ -558,30 +583,68 @@
           <button class="modal-form-button" type="submit">Send</button>
         </form>
       </div>
-    </div>-->
+    </div>
     <!-- мобільне меню -->
     <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu">
-        <svg
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-            clip-rule="evenodd"
-          ></path>
+      <button class="menu-but-close js-close-menu">
+        <svg class="menu-close-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close-mob-menu"></use>
         </svg>
       </button>
 
-      <ul class="mobile-menu">
-        <li><a href="" class="link">About</a></li>
-        <li><a href="" class="link">Products</a></li>
-        <li><a href="" class="link">Contacts</a></li>
-        <li><a href="" class="link">Career</a></li>
+      <ul class="mobile-menu list">
+        <li class="mobile-menu-item">
+          <a href="/index.html" class="link-mob-menu link">Studio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="./portfolio.html" class="link-mob-menu link">Portfolio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="" class="link-mob-menu link">Contacts</a>
+        </li>
+      </ul>
+      <ul class="list mob-menu-container-adress">
+        <li class="mob-menu-navigation">
+          <a class="mob-contacts-tel link" href="tel:+110001111111"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+        <li class="mob-menu-navigation">
+          <a class="mob-contacts-email link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+
+      <ul class="list social-contact-mob">
+        <li class="social-contact-fone-mob">
+          <a class="social-contact-link-mob" href="">
+            <svg class="social-contact-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-contact-fone-mob">
+          <a class="social-contact-link-mob" href="">
+            <svg class="social-contact-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-contact-fone-mob">
+          <a class="social-contact-link-mob" href="">
+            <svg class="social-contact-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-contact-fone-mob">
+          <a class="social-contact-link-mob" href="">
+            <svg class="social-contact-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
       </ul>
     </div>
     <script
@@ -591,8 +654,6 @@
       crossorigin="anonymous"
     ></script>
     <script defer src="./js/mobile-menu.js"></script>
-    <!-- <script src="./js/modal.js">
-    </script>
-    -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>
