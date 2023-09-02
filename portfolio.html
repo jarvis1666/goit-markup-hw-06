@@ -47,6 +47,15 @@
             </li>
           </ul>
         </address>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="mobile-menu-icon" width="32" height="24">
+            <use href="./images/icons.svg#icon-charm_menu-hamburger"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -72,10 +81,15 @@
               <a class="link portfolio-images-link" href="">
                 <div class="box-for-overlay">
                   <img
+                    srcset="
+                      ./images/row1/img-2.jpg    1x,
+                      ./images/row1/img-2@2x.jpg 2x
+                    "
                     src="./images/row1/img-2.jpg"
                     alt="Banking App Interface Concept"
                     width="360"
                     height="300"
+                    loading="lazy"
                   />
                   <p class="overlay">
                     - 14 Stylish and User-Friendly App Design Concepts · Task
@@ -93,10 +107,15 @@
               <a class="link portfolio-images-link" href="">
                 <div class="box-for-overlay">
                   <img
+                    srcset="
+                      ./images/row1/img-1.jpg    1x,
+                      ./images/row1/img-1@2x.jpg 2x
+                    "
                     src="./images/row1/img-1.jpg"
                     alt="Cashless Payment"
                     width="360"
                     height="300"
+                    loading="lazy"
                   />
                   <p class="overlay">
                     - 14 Stylish and User-Friendly App Design Concepts · Task
@@ -114,6 +133,10 @@
               <a class="link portfolio-images-link" href="">
                 <div class="box-for-overlay">
                   <img
+                    srcset="
+                      ./images/row1/img.jpg    1x,
+                      ./images/row1/img@2x.jpg 2x
+                    "
                     src="./images/row1/img.jpg"
                     alt="Meditation App"
                     width="360"
@@ -135,10 +158,15 @@
               <a class="link portfolio-images-link" href="">
                 <div class="box-for-overlay">
                   <img
+                    srcset="
+                      ./images/row2/img-2.jpg    1x,
+                      ./images/row2/img-2@2x.jpg 2x
+                    "
                     src="./images/row2/img-2.jpg"
                     alt="Taxi Service"
                     width="360"
                     height="300"
+                    loading="lazy"
                   />
                   <p class="overlay">
                     - 14 Stylish and User-Friendly App Design Concepts · Task
@@ -156,10 +184,15 @@
               <a class="link portfolio-images-link" href="">
                 <div class="box-for-overlay">
                   <img
+                    srcset="
+                      ./images/row2/img-1.jpg    1x,
+                      ./images/row2/img-1@2x.jpg 2x
+                    "
                     src="./images/row2/img-1.jpg"
                     alt="Screen Illustrations"
                     width="360"
                     height="300"
+                    loading="lazy"
                   />
                   <p class="overlay">
                     - 14 Stylish and User-Friendly App Design Concepts · Task
@@ -177,10 +210,15 @@
               <a class="link portfolio-images-link" href="">
                 <div class="box-for-overlay">
                   <img
+                    srcset="
+                      ./images/row2/img.jpg    1x,
+                      ./images/row2/img@2x.jpg 2x
+                    "
                     src="./images/row2/img.jpg"
                     alt="Online Courses"
                     width="360"
                     height="300"
+                    loading="lazy"
                   />
                   <p class="overlay">
                     - 14 Stylish and User-Friendly App Design Concepts · Task
@@ -198,10 +236,15 @@
               <a class="link portfolio-images-link" href=""
                 ><div class="box-for-overlay">
                   <img
+                    srcset="
+                      ./images/row3/img-2.jpg    1x,
+                      ./images/row3/img-2@2x.jpg 2x
+                    "
                     src="./images/row3/img-2.jpg"
                     alt="Instagram Stories Concept"
                     width="360"
                     height="300"
+                    loading="lazy"
                   />
                   <p class="overlay">
                     - 14 Stylish and User-Friendly App Design Concepts · Task
@@ -219,10 +262,15 @@
               <a class="link portfolio-images-link" href="">
                 <div class="box-for-overlay">
                   <img
+                    srcset="
+                      ./images/row3/img-1.jpg    1x,
+                      ./images/row3/img-1@2x.jpg 2x
+                    "
                     src="./images/row3/img-1.jpg"
                     alt="Organic Food"
                     width="360"
                     height="300"
+                    loading="lazy"
                   />
                   <p class="overlay">
                     - 14 Stylish and User-Friendly App Design Concepts · Task
@@ -240,10 +288,15 @@
               <a class="link portfolio-images-link" href="">
                 <div class="box-for-overlay">
                   <img
+                    srcset="
+                      ./images/row3/img.jpg    1x,
+                      ./images/row3/img@2x.jpg 2x
+                    "
                     src="./images/row3/img.jpg"
                     alt="Fresh Coffee"
                     width="360"
                     height="300"
+                    loading="lazy"
                   />
                   <p class="overlay">
                     - 14 Stylish and User-Friendly App Design Concepts · Task
@@ -327,5 +380,75 @@
         </div>
       </div>
     </footer>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-but-close js-close-menu">
+        <svg class="menu-close-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close-mob-menu"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu list">
+        <li class="mobile-menu-item">
+          <a href="/index.html" class="link-mob-menu link">Studio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="./portfolio.html" class="link-mob-menu link">Portfolio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="" class="link-mob-menu link">Contacts</a>
+        </li>
+      </ul>
+      <ul class="list mob-menu-container-adress">
+        <li class="mob-menu-navigation">
+          <a class="mob-contacts-tel link" href="tel:+110001111111"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+        <li class="mob-menu-navigation">
+          <a class="mob-contacts-email link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+
+      <ul class="list social-contact-mob">
+        <li class="social-contact-fone-mob">
+          <a class="social-contact-link-mob" href="">
+            <svg class="social-contact-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-contact-fone-mob">
+          <a class="social-contact-link-mob" href="">
+            <svg class="social-contact-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-contact-fone-mob">
+          <a class="social-contact-link-mob" href="">
+            <svg class="social-contact-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-contact-fone-mob">
+          <a class="social-contact-link-mob" href="">
+            <svg class="social-contact-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
